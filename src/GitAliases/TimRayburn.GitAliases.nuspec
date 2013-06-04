@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>TimRayburn.GitAliases</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <title>Git - Aliases</title>
     <authors>Various</authors>
     <owners>Tim Rayburn</owners>
-    <projectUrl>http://github.com/TRayburn/GitConfig/</projectUrl>
+    <projectUrl>http://github.com/TRayburn/ChocolateyPackages/</projectUrl>
     <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/git/git.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>My standard Git aliases

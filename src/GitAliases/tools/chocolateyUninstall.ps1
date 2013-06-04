@@ -1,4 +1,4 @@
-$package = 'EthanBrown.GitAliases'
+$package = 'TimRayburn.GitAliases'
 
 try {
   Write-Host "Manually edit $ENV:USERPROFILE\.gitconfig to revert package changes"

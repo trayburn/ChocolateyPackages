@@ -1,4 +1,4 @@
-$package = 'EthanBrown.GitAliases'
+$package = 'TimRayburn.GitAliases'
 
 try {
   # inspired by a ton of places
