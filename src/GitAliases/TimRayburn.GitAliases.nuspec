@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>TimRayburn.GitAliases</id>
-    <version>1.0.2</version>
-    <title>Git - Aliases</title>
+    <version>1.0.3</version>
+    <title>Tim Rayburn's GIT Aliases</title>
     <authors>Various</authors>
     <owners>Tim Rayburn</owners>
     <projectUrl>http://github.com/TRayburn/ChocolateyPackages/</projectUrl>
