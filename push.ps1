@@ -1,1 +1,1 @@
- Get-Item .\build\*.nupkg | % { src\.nuget\NuGet.exe push $_ }
+ Get-Item .\build\*.nupkg | % { .\nuget\NuGet.exe push $_ -Source http://chocolatey.org/ }
