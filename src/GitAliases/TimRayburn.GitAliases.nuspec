@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>TimRayburn.GitAliases</id>
+    <version>1.0.0</version>
+    <title>Git - Aliases</title>
+    <authors>Various</authors>
+    <owners>Tim Rayburn</owners>
+    <projectUrl>http://github.com/TRayburn/GitConfig/</projectUrl>
+    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/git/git.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>My standard Git aliases
+
+[alias]
+	a = add
+	b = branch
+	c = checkout
+	f = fetch
+	l = log --pretty=oneline --abbrev-commit
+	r = rebase --interactive HEAD~10
+	s = -p status
+	pr = pull --rebase
+	pom = push origin master
+	pos = push origin source
+	rc = rebase --continue
+	ra = rebase --abort
+	ss = -p status -s
+	lg = log --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --date=relative
+	lga = log --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --date=relative --all
+	ll = log --pretty=oneline --abbrev-commit --max-count=15
+	lc = log --stat --summary
+	tpr = tf pull --rebase --deep
+	tcd = tf checkin --deep
+	prune = fetch --prune
+	aliases = config --get-regexp alias
+	amend = commit --amend
+	bl = blame -w -M -C
+	bra = branch -rav
+	branches = branch -rav
+	changed = status -sb
+	filelog = log -u
+	hist = log --graph --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue) [%an]%Creset&#39; --abbrev-commit --date=relative
+	last = log -p --max-count=1 --word-diff
+	lastref = rev-parse --short HEAD
+	lasttag = describe --tags --abbrev=0
+	pick = add -p
+	remotes = remote -v show
+	stage = add
+	standup = log --since yesterday --oneline --author Tim Rayburn
+	stats = diff --stat
+	sync = ! git fetch upstream -v &amp;&amp; git fetch origin -v &amp;&amp; git checkout master &amp;&amp; git merge upstream/master
+	undo = reset head~
+	unstage = reset HEAD
+	wdiff = diff --word-diff
+	who = shortlog -s -e --
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color &quot;branch&quot;]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color &quot;diff&quot;]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color &quot;status&quot;]
+	added = yellow
+	changed = green
+	untracked = cyan
+      </description>
+    <summary>Git aliases</summary>
+    <releaseNotes />
+    <tags>Git</tags>
+    <dependencies>
+      <dependency id="poshgit" />
+    </dependencies>
+  </metadata>
+</package>
