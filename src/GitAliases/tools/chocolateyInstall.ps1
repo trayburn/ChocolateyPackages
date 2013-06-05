@@ -64,7 +64,7 @@ try {
   $userName = git config --global --get user.name
   if ($userName)
   {
-    git config --global alias.standup "log --since yesterday --oneline --author $userName"
+    git config --global alias.standup "log --since yesterday --oneline --author '$userName'"
   }
   else
   {
