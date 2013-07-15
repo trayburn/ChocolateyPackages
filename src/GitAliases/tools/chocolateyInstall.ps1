@@ -29,6 +29,8 @@ try {
   # GIT TF aliases
   git config --global alias.tpr "tf pull --rebase --deep"
   git config --global alias.tcd "tf checkin --deep"
+  git config --global alias.tprs "tf pull --rebase --shallow"
+  git config --global alias.tcds "tf checkin --shallow"
 
   # Colorization
   git config --global color.branch "auto"
