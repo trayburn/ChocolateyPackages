@@ -4,9 +4,10 @@ try {
   # inspired by a ton of places
   
   # one letter shortcuts for the win
-  git config --global alias.a 'add'
+  git config --global alias.a 'add -A'
   git config --global alias.b 'branch'
   git config --global alias.c 'checkout'
+  git config --global alias.cb 'checkout -b'
   git config --global alias.f 'fetch'
   git config --global alias.l 'log --pretty=oneline --abbrev-commit'
   git config --global alias.r 'rebase --interactive HEAD~10'
