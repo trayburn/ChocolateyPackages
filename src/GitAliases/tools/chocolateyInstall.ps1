@@ -26,6 +26,13 @@ try {
   git config --global alias.lga "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all"
   git config --global alias.ll "log --pretty=oneline --abbrev-commit --max-count=15"
   git config --global alias.lc "log --stat --summary"
+  
+
+	# PUB Pushes current branch/ref to origin/master and local master  
+	# UP Rebases current branch on origin/master, and keep local master in sync
+	git config --global alias.up "!git fetch --all --prune && git rebase origin/master && git submodule update && git push . origin/master:master 2> /dev/null"
+	git config --global alias.pub "!git push origin HEAD:master && git push . HEAD:master && git checkout master"
+
 
   # GIT TF aliases
   git config --global alias.tpr "tf pull --rebase --deep"
